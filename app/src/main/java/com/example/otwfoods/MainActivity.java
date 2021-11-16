@@ -2,10 +2,15 @@ package com.example.otwfoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.otwfoods.AdministratorUser.AdministratorSignInActivity;
+import com.example.otwfoods.ClientUser.ClientUserSigninActivity;
+import com.example.otwfoods.RestaurantUser.RestaurantSigninActivity;
+import com.example.otwfoods.RiderUser.RiderSignInActivity;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -35,13 +40,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view == clientUser) {
-            Toast.makeText(this, "clicked Client", Toast.LENGTH_SHORT).show();
+            Intent clientUser = new Intent(MainActivity.this, ClientUserSigninActivity.class);
+            startActivity(clientUser);
         } else if (view == restaurantUser) {
-            Toast.makeText(this, "clicked Restaurant", Toast.LENGTH_SHORT).show();
+            Intent restaurantUser = new Intent(MainActivity.this, RestaurantSigninActivity.class);
+            startActivity(restaurantUser);
         } else if (view == riderUser) {
-            Toast.makeText(this, "clicked Rider", Toast.LENGTH_SHORT).show();
+            Intent riderUser = new Intent(MainActivity.this, RiderSignInActivity.class);
+            startActivity(riderUser);
         } else if (view == administratorUser) {
-            Toast.makeText(this, "clicked Administrator", Toast.LENGTH_SHORT).show();
+            Intent administratorUser = new Intent(MainActivity.this, AdministratorSignInActivity.class);
+            startActivity(administratorUser);
         }
     }
 }
