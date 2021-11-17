@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OTWFoods">
-        <activity android:name=".AdministratorUser.AdministratorSignInActivity"></activity>
+        <activity android:name=".AdministratorUser.AddRestaurantActivity"></activity>
+        <activity android:name=".AdministratorUser.AdministratorSignInActivity" />
         <activity android:name=".RiderUser.RiderSignInActivity" />
         <activity android:name=".RestaurantUser.RestaurantSigninActivity" />
         <activity android:name=".ClientUser.ClientUserSigninActivity" />
