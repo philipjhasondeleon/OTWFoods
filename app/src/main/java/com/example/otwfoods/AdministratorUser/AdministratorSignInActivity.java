@@ -49,12 +49,12 @@ public class AdministratorSignInActivity extends AppCompatActivity {
 
     private void btnSignInAppAdministrator(String phone, String password){
 
-        ProgressDialog mDialog = new ProgressDialog(AdministratorSignInActivity.this);
-        mDialog.setMessage("Please waiting..");
+        final ProgressDialog mDialog = new ProgressDialog(AdministratorSignInActivity.this);
+        mDialog.setMessage("Please wait..");
         mDialog.show();
 
-        String localPhone = phone;
-        String localPassword = password;
+        final String localPhone = phone;
+        final String localPassword = password;
 
         appAdmin.addValueEventListener(new ValueEventListener() {
             @Override
