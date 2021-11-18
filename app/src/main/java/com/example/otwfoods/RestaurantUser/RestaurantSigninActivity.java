@@ -9,9 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.otwfoods.AdministratorUser.AdministratorSignInActivity;
 import com.example.otwfoods.R;
-import com.example.otwfoods.RestaurantUser.Activities.RestaurantHomeActivity;
+import com.example.otwfoods.RestaurantUser.Activities.MainAdminActivity;
 import com.example.otwfoods.RestaurantUser.Model.UserRestaurant;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -66,7 +65,7 @@ public class RestaurantSigninActivity extends AppCompatActivity {
                     userRestaurant.setPhone(localPhone);
                     if(Boolean.parseBoolean(userRestaurant.getIsadmin())){
                         if(userRestaurant.getPassword().equals(localPassword)){
-                            Intent intent = new Intent(RestaurantSigninActivity.this, RestaurantHomeActivity.class);
+                            Intent intent = new Intent(RestaurantSigninActivity.this, MainAdminActivity.class);
                             ConstantRestaurant.currentUserRestaurant = userRestaurant;
                             startActivity(intent);
                             finish();

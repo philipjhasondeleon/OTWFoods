@@ -1,4 +1,4 @@
-package com.example.otwfoods.AdministratorUser.Model;
+package com.example.otwfoods.Administrator.Model;
 
 public class UserAdministrator {
     private  String name;

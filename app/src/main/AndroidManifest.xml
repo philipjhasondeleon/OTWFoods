@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OTWFoods">
-        <activity android:name=".RestaurantUser.Activities.RestaurantHomeActivity"></activity>
-        <activity android:name=".AdministratorUser.AddRestaurantActivity" />
-        <activity android:name=".AdministratorUser.AdministratorSignInActivity" />
+        <activity android:name=".Rider.SignInAsRiderActivity"></activity>
+        <activity android:name=".RestaurantUser.Activities.MainAdminActivity" />
+        <activity android:name=".Administrator.Activities.AddRestaurantActivity" />
+        <activity android:name=".Administrator.Activities.SignInActivityAppAdmin" />
         <activity android:name=".RiderUser.RiderSignInActivity" />
         <activity android:name=".RestaurantUser.RestaurantSigninActivity" />
-        <activity android:name=".ClientUser.ClientUserSigninActivity" />
+        <activity android:name=".Client.Activities.SignInActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

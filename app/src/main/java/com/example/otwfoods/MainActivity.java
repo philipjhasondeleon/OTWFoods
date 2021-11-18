@@ -5,12 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
-import com.example.otwfoods.AdministratorUser.AdministratorSignInActivity;
-import com.example.otwfoods.ClientUser.ClientUserSigninActivity;
+import com.example.otwfoods.Administrator.Activities.SignInActivityAppAdmin;
+import com.example.otwfoods.Client.Activities.SignInActivity;
 import com.example.otwfoods.RestaurantUser.RestaurantSigninActivity;
-import com.example.otwfoods.RiderUser.RiderSignInActivity;
+import com.example.otwfoods.Rider.SignInAsRiderActivity;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -40,16 +39,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view == clientUser) {
-            Intent clientUser = new Intent(MainActivity.this, ClientUserSigninActivity.class);
+            Intent clientUser = new Intent(MainActivity.this, SignInActivity.class);
             startActivity(clientUser);
         } else if (view == restaurantUser) {
             Intent restaurantUser = new Intent(MainActivity.this, RestaurantSigninActivity.class);
             startActivity(restaurantUser);
         } else if (view == riderUser) {
-            Intent riderUser = new Intent(MainActivity.this, RiderSignInActivity.class);
+            Intent riderUser = new Intent(MainActivity.this, SignInAsRiderActivity.class);
             startActivity(riderUser);
         } else if (view == administratorUser) {
-            Intent administratorUser = new Intent(MainActivity.this, AdministratorSignInActivity.class);
+            Intent administratorUser = new Intent(MainActivity.this, SignInActivityAppAdmin.class);
             startActivity(administratorUser);
         }
     }

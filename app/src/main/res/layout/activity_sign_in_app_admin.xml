@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgreglogin"
-    tools:context=".AdministratorUser.AdministratorSignInActivity">
+    tools:context=".Administrator.Activities.SignInActivityAppAdmin">
 
     <LinearLayout
         android:layout_width="match_parent"
